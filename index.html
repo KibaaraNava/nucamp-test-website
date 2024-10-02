@@ -25,10 +25,11 @@
                         <h1>Nucamp</h1>
                         <h2>A Better Way To Camp</h2>     
                     </div>
+                    <!--Reserve Button-->
                     <div class="col-12 col-md-4 col-xl-2 mt-4 align-self-center">                       
-                         <span>
-                             <a href="#reserveForm" class="btn btn-info btn-lg text-white text-decoration-none" role="button">Reserve Campsite</a>
-                        </span>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reserveModal">
+                            Reserve Campsite
+                        </button>
                     </div>
                 </div>
             </div>
@@ -103,6 +104,51 @@
                 </div>
             </div>
        </div>
+       <!--Reserve Modal-->
+       <div class="modal fade" id="reserveModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h3 class="modal-title">Reserve a Campsite</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <label class="col-12 col-sm-6" for="Dropdown">Number of Campers</label>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select" name="campers" id="Dropdown">
+                                        <option value="Select">Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-12 col-sm-6" for="booking">Date</label>
+                                <div class="col-12 col-sm-6">
+                                    <input class="form-control" type="date" id="booking">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-1">
+                                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                <div class="col-1 ms-1">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
 <!--Discover Section-->
        <main class="container">
             <section class="row row-content align-items-center">
@@ -151,41 +197,6 @@
                             <p class="d-none d-sm-block">
                              Bootstrap Outfitters supplies you with gear you need at prices you can't beat.
                              </p>  
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="row row-content">
-                <div class="col-sm-9 mx-auto">
-                    <div class="card"  id="reserveForm">
-                        <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-                        <!--Reservation Card Form-->
-                        <div class="card-body">
-                            <div class="row mb-3">
-                                <label class="col-12 col-sm-6" for="Dropdown">Number of Campers</label>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select" name="campers" id="Dropdown">
-                                        <option value="Select">Select...</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label class="col-12 col-sm-6" for="booking">Date</label>
-                                <div class="col-12 col-sm-6">
-                                    <input class="form-control" type="date" id="booking">
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div>
-                                    <button class="btn btn-primary" type="submit">Search</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
