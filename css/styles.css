@@ -43,3 +43,6 @@ footer {
 .carousel {
     border: solid #5637DD;
 }
+.circle-indicator button {
+   border: 2px solid brown;
+}
